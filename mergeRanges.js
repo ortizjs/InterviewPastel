@@ -1,4 +1,4 @@
-var hiCal = function(arr) {
+var mergeRanges = function(arr) {
   let sorted = arr.sort((a,b) => a.startTime - b.startTime);
   let result = [sorted[0]];
   for (let i = 1; i < sorted.length - 1; i++){
@@ -11,11 +11,11 @@ var hiCal = function(arr) {
     }
   }
   return result;
-}
+};
 
 
 
-hiCal(  [
+mergeRanges(  [
   { startTime: 0,  endTime: 1 },
   { startTime: 3,  endTime: 5 },
   { startTime: 4,  endTime: 8 },
